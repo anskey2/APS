@@ -6,4 +6,4 @@ To use the bot:
 2. Unzip the file
 3. Edit the values in .env
 4. Run the exe (or index.js with nodejs)
-5. Watch your victim get mad and confused
+5. Watch your victim get mad and confused lol

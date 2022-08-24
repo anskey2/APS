@@ -1,8 +1,9 @@
-# APS v1.1
+# APS
 This is a discord bot that automatically reacts to someone's messages!
 
 To use the bot:
-1. Unzip the file
-2. Edit the values in .env
-3. Run the exe (or index.js with nodejs)
-4. Watch your victim get mad and confused
+1. Download latest version from releases
+2. Unzip the file
+3. Edit the values in .env
+4. Run the exe (or index.js with nodejs)
+5. Watch your victim get mad and confused

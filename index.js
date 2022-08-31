@@ -13,15 +13,18 @@ const client = new discordjs.Client({
 })
 client.on("ready", async () => {
   console.log(`${client.user.tag} loaded`)
+  const presences = [`APS@${client.user.id}`, `APS`, `.help`]
   client.user.setStatus('idle')
-  client.user.setPresence({activities: [{name: `APS@${client.user.id}`, type: 3}]})
+  if (process.env.PRESENCE !== 3) {
+     client.user.setPresence({activities: [{name: presences[process.env.PRESENCE], type: 3}]})
+  }
   console.log("Updated rich presence")
 })
 
 client.on('messageCreate', (message) => {
   if (message.author.id === process.env.ID) {
+   message.react(process.env.EMOJI)
    console.log("Reacted to message!")
-   message.react('🤓')
   }
 });
 
